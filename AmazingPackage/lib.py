@@ -1,17 +1,18 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import os
-import sys
-from PIL import Image
+#from PIL import Image
+from skimage import io
+
 
 def try_me():
     rep=input("Do you want some Jean-Rémi's nudes ?\n [Y/N]")
     if rep.lower()=='y':
-        chem=os.path.abspath(sys.path[0])
-        chem=os.path.join(chem,"JR.jpeg")
-        img = np.array(Image.open(chem))
+        img = io.imread(
+            "http://dominique.billot1.free.fr/site_arts_visuels/site_sculpture_musee/090108%20bonhomme%20file%20de%20fer/modele04.jpg"
+        )
         plt.imshow(img)
         plt.axis('off')
         plt.title('Have Fun ;)')
         plt.show()
-    print("You don't know what you are missing")
+    else :
+        print("You don't know what you are missing")
