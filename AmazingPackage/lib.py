@@ -13,6 +13,5 @@ def try_me():
         plt.imshow(img)
         plt.axis('off')
         plt.title('Have Fun ;)')
-        plt.show()
     else :
         print("You don't know what you are missing")
