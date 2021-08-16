@@ -6,21 +6,21 @@ wheel>=0.29
 
 # data science
 numpy
-pandas
-scikit-learn
+#pandas
+#scikit-learn
 
 # tests/linter
 black
-coverage
+#coverage
 flake8
 pytest
 yapf
 
 # API
-gcsfs
-google-cloud-storage
-mlflow
-s3fs
+#gcsfs
+#google-cloud-storage
+#mlflow
+#s3fs
 
 # utilities
 six>=1.14
